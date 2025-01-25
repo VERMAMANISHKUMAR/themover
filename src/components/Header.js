@@ -33,13 +33,13 @@ const Header = () => {
             <div className="col-lg-6 col-sm-6">
               <ul className="right-info">
                 <li className="mr-20">
-                  <Link to="#">Contact</Link>
+                  <Link to="/for-enterprise">For Enterprise</Link>
                 </li>
                 <li className="mr-20">
-                  <Link to="#">Career</Link>
+                  <Link to="/delivery-partners">Delivery Partners</Link>
                 </li>
                 <li className="mr-20">
-                  <Link to="#">News & Media</Link>
+                  <Link to="/support">Support</Link>
                 </li>
                 <li>
                   <a href="#" target="_blank" rel="noopener noreferrer">
@@ -93,7 +93,7 @@ const Header = () => {
               <div className="collapse navbar-collapse mean-menu">
                 <ul className="navbar-nav ms-auto">
                   <li className="nav-item">
-                    <Link to="#" className="nav-link active">
+                    <Link to="/" className="nav-link active">
                       Home
                     </Link>
                   </li>
@@ -105,13 +105,13 @@ const Header = () => {
                   </li>
 
                   <li className="nav-item">
-                    <Link to="#" className="nav-link">
+                    <Link to="/services" className="nav-link">
                       Services
                     </Link>
                   </li>
 
                   <li className="nav-item">
-                    <Link to="#" className="nav-link">
+                    <Link to="/blog" className="nav-link">
                       Blog
                     </Link>
                   </li>
