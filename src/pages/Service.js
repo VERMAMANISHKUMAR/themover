@@ -18,7 +18,7 @@ const ServicesPage = () => {
                             <div className="page-content">
                                 <h2>Our Services</h2>
                                 <ul>
-                                <Link to="/">Home</Link>
+                                    <li><Link to="/">Home</Link></li>
                                     <li>Services</li>
                                 </ul>
                             </div>

@@ -13,18 +13,18 @@ const Header = () => {
               <ul className="left-info">
                 <li>
                   <a
-                    href="mailto:info@themover.in"
+                    href="mailto:support@themover.in"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <i className="bx bxs-envelope"></i>
-                    info@themover.in
+                    support@themover.in
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+0123456789">
+                  <a href="tel:+919136369036">
                     <i className="bx bxs-phone-call"></i>
-                    +0123 456 789
+                    +91 91363 69036
                   </a>
                 </li>
               </ul>
@@ -39,7 +39,7 @@ const Header = () => {
                   <Link to="/delivery-partners">Delivery Partners</Link>
                 </li>
                 <li className="mr-20">
-                  <Link to="/support">Support</Link>
+                  <Link to="/contact-us">Support</Link>
                 </li>
                 <li>
                   <a href="#" target="_blank" rel="noopener noreferrer">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../assets/css/animate.min.css";
 import "../assets/css/bootstrap.min.css";
 import "../assets/css/boxicons.min.css";
@@ -30,9 +31,62 @@ const Footer = () => {
                   />
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  At TheMover, we are committed to making your moving and parcel
+                  delivery experience seamless and hassle-free. Whether you need
+                  assistance with local shifting, packing and moving, or
+                  reliable parcel services.
                 </p>
+              </div>
+            </div>
 
+            <div className="col-lg-3 col-sm-6">
+              <div className="footer-widget">
+                <h3>Company</h3>
+                <ul className="footer-text">
+                  <li><Link to="/about-us">About Us</Link></li>
+                  <li><Link to="/services">Services</Link></li>
+                  <li><Link to="#">Features</Link></li>
+                  <li><Link to="#">Cost Calculator</Link></li>
+                  <li><Link to="/blog">Latest News</Link></li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-sm-6">
+              <div className="footer-widget">
+                <h3>Support</h3>
+                <ul className="footer-text">
+                  <li><Link to="#">FAQ’s</Link></li>
+                  <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+                  <li><Link to="/terms-condition">Terms & Conditions</Link></li>
+                  <li><Link to="#">Community</Link></li>
+                  <li><Link to="/contact-us">Contact Us</Link></li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-sm-6">
+              <div className="footer-widget">
+                <h3>Contact Info</h3>
+                <ul className="info-list">
+                  <li>
+                    <i className="bx bxs-location-plus"></i>
+                    Sector 39, Gurugram, Haryana 122002
+                  </li>
+                  <li>
+                    <i className="bx bxs-envelope"></i>
+                    <a href="mailto:info@themover.in">info@themover.in</a>
+                  </li>
+                  <li>
+                    <i className="bx bxs-envelope"></i>
+                    <a href="mailto:support@themover.in">support@themover.in</a>
+                  </li>
+                  <li>
+                    <i className="bx bxs-phone"></i>
+                    <a href="tel:+919136369036">+91 91363 69036</a>
+                  </li>
+                </ul>
+                
                 <ul className="footer-socials">
                   <li>
                     <a href="#" target="_blank" rel="noopener noreferrer">
@@ -57,56 +111,6 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-
-            <div className="col-lg-3 col-sm-6">
-              <div className="footer-widget">
-                <h3>Company</h3>
-                <ul className="footer-text">
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Cost Calculator</a></li>
-                  <li><a href="#">Latest News</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-sm-6">
-              <div className="footer-widget">
-                <h3>Support</h3>
-                <ul className="footer-text">
-                  <li><a href="faq.html">FAQ’s</a></li>
-                  <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                  <li><a href="terms-condition.html">Terms & Conditions</a></li>
-                  <li><a href="#">Community</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-sm-6">
-              <div className="footer-widget">
-                <h3>Contact Info</h3>
-                <ul className="info-list">
-                  <li>
-                    <i className="bx bxs-location-plus"></i>
-                    6th Floor, Barbosa, Sidney
-                  </li>
-                  <li>
-                    <i className="bx bxs-envelope"></i>
-                    <a href="mailto:info@themover.in">info@themover.in</a>
-                  </li>
-                  <li>
-                    <i className="bx bxs-envelope"></i>
-                    <a href="mailto:support@themover.in">support@themover.in</a>
-                  </li>
-                  <li>
-                    <i className="bx bxs-phone"></i>
-                    <a href="tel:+0123456789">+0123 456 789</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </footer>
@@ -115,14 +119,18 @@ const Footer = () => {
         <div className="container">
           <p>
             Copyright 2025. All Rights Reserved{" "}
-            <a href="https://themover.in/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://themover.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Themover
             </a>
           </p>
         </div>
       </div>
-      <div class="go-top">
-        <i class='bx bx-chevrons-up'></i>
+      <div className="go-top">
+        <i className="bx bx-chevrons-up"></i>
       </div>
     </>
   );

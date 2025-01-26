@@ -32,14 +32,13 @@ const AboutUs = () => {
             <div className="col-lg-6">
               <div className="about-safe-text">
                 <h2>Safe, Faster And Easy Solution For Shipping</h2>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia sunt explicabo.</p>
+                <p>At <strong>TheMover</strong>, we specialize in making moving and logistics simpler and stress-free for individuals and businesses across India. With years of experience, we have built a reputation for trust, reliability, and efficiency in the industry.</p>
+                <p>Our services range from <strong>local shifting</strong> to <strong>comprehensive packing and moving</strong>, as well as a dependable <strong>parcel service</strong> that ensures your packages are delivered on time, every time.</p>
+                <p>Whether it’s local moves, packers and movers services, or parcel deliveries, TheMover continues to set the benchmark for digital shipping excellence. Trust us to deliver your packages on time, every time – because we’ve been doing it right since 1998!</p>
               </div>
 
-              <div className="shipping-card">
+              {/* <div className="shipping-card">
                 <div className="shipping-contant">
-                  <div className="shipping-sign">
-                    <img src={signature} alt="signature" />
-                  </div>
                   <div className="shipping-image">
                     <img src={img1} alt="John Doe" />
                   </div>
@@ -47,7 +46,7 @@ const AboutUs = () => {
                   <span>CEO, Ferry</span>
                   <p>Nor again is there anyone who loves or pursues or desires to.</p>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="col-lg-6">
               <div className="safe-image">
@@ -63,38 +62,25 @@ const AboutUs = () => {
       <div className="about-info-area pb-70">
         <div className="container">
           <div className="row">
-            {/* Our Mission */}
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-6 col-md-6">
               <div className="about-info-card">
                 <h3>Our Mission</h3>
-                <ul>
-                  <li><i className='bx bx-check'></i> We provide best logistic service worldwide</li>
-                  <li><i className='bx bx-check'></i> All payment methods we accept</li>
-                  <li><i className='bx bx-check'></i> We provide proper safety and security</li>
-                </ul>
+                <p>At <strong>TheMover</strong>, our mission is to revolutionize the moving and logistics industry in India by delivering reliable, efficient, and affordable services. We aim to simplify the relocation and parcel delivery process with innovative solutions, ensuring a stress-free experience for our customers. We are committed to handling every move and package with the utmost care, professionalism, and integrity, building long-term trust and relationships with our clients.</p>
+                <p>Our vision is to become India’s most trusted and preferred brand in the moving and logistics sector. We aspire to lead the industry by consistently setting new benchmarks for quality, efficiency, and customer satisfaction. Through the integration of advanced technologies and sustainable practices, we aim to redefine logistics solutions and contribute to a seamless, connected future.</p>
               </div>
             </div>
 
-            {/* Our Promises */}
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-6 col-md-6 offset-md-3 offset-lg-0">
               <div className="about-info-card">
-                <h3>Our Promises</h3>
+                <h3>Why Choose TheMover?</h3>
+                <p>From the moment you book with us to the final delivery, we ensure a seamless and hassle-free experience. Let TheMover be your trusted partner in moving forward.</p>
                 <ul>
-                  <li><i className='bx bx-check'></i> We provide best logistic service worldwide</li>
-                  <li><i className='bx bx-check'></i> All payment methods we accept</li>
-                  <li><i className='bx bx-check'></i> We provide proper safety and security</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Our Vision */}
-            <div className="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-              <div className="about-info-card">
-                <h3>Our Vision</h3>
-                <ul>
-                  <li><i className='bx bx-check'></i> We provide best logistic service worldwide</li>
-                  <li><i className='bx bx-check'></i> All payment methods we accept</li>
-                  <li><i className='bx bx-check'></i> We provide proper safety and security</li>
+                  <li><i className='bx bx-check'></i> <strong>Expert Team:</strong> Our experienced professionals handle your belongings with care.</li>
+                  <li><i className='bx bx-check'></i> <strong>Nationwide Reach:</strong> We serve across major cities and towns in India.</li>
+                  <li><i className='bx bx-check'></i> <strong>Affordable Rates:</strong> High-quality services at competitive prices.</li>
+                  <li><i className='bx bx-check'></i> <strong>Customer First:</strong> We prioritize your convenience and satisfaction.</li>
+                  <li><i className='bx bx-check'></i> <strong>Timely Deliveries:</strong> We understand the value of time and ensure your items are delivered promptly.</li>
+                  <li><i className='bx bx-check'></i> <strong>Eco-Friendly Practices:</strong> We strive to minimize our environmental impact with sustainable packing materials and practices.</li>
                 </ul>
               </div>
             </div>
@@ -117,7 +103,8 @@ const AboutUs = () => {
               <div className="col-lg-6">
                 <div className="digital-text">
                   <h2>Trusted Digital Shipping From <span>1998</span></h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>At TheMover, we’ve been at the forefront of reliable and innovative shipping solutions since 1998. With over two decades of experience, we’ve evolved into a trusted name for seamless digital shipping services across India.</p>
+                  <p>From the very beginning, our mission has been to simplify the logistics process while maintaining the highest standards of efficiency, reliability, and customer satisfaction. Over the years, we have embraced cutting-edge technology to bring you fast, secure, and transparent shipping services, making your logistics experience better than ever.</p>
                 </div>
               </div>
             </div>
@@ -130,7 +117,7 @@ const AboutUs = () => {
                   <div className="card-text">
                     <i className='bx bx-cart-alt'></i>
                     <h3><span>1998</span> - Company Started</h3>
-                    <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                    <p><strong>Legacy of Trust:</strong> 25+ years of excellence in shipping and logistics.</p>
                   </div>
                 </div>
               </div>
@@ -140,7 +127,7 @@ const AboutUs = () => {
                   <div className="card-text">
                     <i className='bx bx-map-alt'></i>
                     <h3><span>2008</span> - Office Worldwide</h3>
-                    <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                    <p><strong>Nationwide Reach:</strong> Serving customers across India with speed and reliability.</p>
                   </div>
                 </div>
               </div>
@@ -150,7 +137,7 @@ const AboutUs = () => {
                   <div className="card-text">
                     <i className='bx bxs-truck'></i>
                     <h3><span>2004</span> - Vehicles Adding</h3>
-                    <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                    <p><strong>Advanced Digital Solutions:</strong> Real-time tracking, easy online booking, and seamless digital operations.</p>
                   </div>
                 </div>
               </div>
@@ -160,7 +147,7 @@ const AboutUs = () => {
                   <div className="card-text">
                     <i className='bx bx-award'></i>
                     <h3><span>2012</span> - Award Of The Year Won</h3>
-                    <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                    <p><strong>Customer-Centric Approach:</strong> Your satisfaction is our top priority, and we’re committed to meeting your logistics needs with care and precision.</p>
                   </div>
                 </div>
               </div>
@@ -169,27 +156,6 @@ const AboutUs = () => {
         </div>
       </div>
       {/* End Digital Area */}
-
-      {/* Partner Slider Area */}
-      <div className="partner-area ptb-100">
-        <div className="container">
-          <div className="section-title">
-            <span>Partner</span>
-            <h2>20+ Companies Trusted Us and Getting Result</h2>
-          </div>
-
-          <div className="partner-slider owl-carousel owl-theme">
-            {/* Slider Items */}
-            <div className="partner-slider-item">
-              <a href="#">
-                <img src={partner}alt="Logo" />
-              </a>
-            </div>
-            {/* Additional Partner Items */}
-          </div>
-        </div>
-      </div>
-      {/* End Partner Slider Area */}
 
       {/* Newsletter Area */}
       <div className="newsletter-area">

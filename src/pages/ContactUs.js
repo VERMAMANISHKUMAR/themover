@@ -12,6 +12,7 @@ const ContactUs = () => {
                             <div className="page-content">
                                 <h2>Contact With Us</h2>
                                 <ul>
+                                    <p>At TheMover, we are committed to making your moving and parcel delivery experience seamless and hassle-free. Whether you need assistance with local shifting, packing and moving, or reliable parcel services, we are here to help you!!</p>
                                     <li><Link to="/">Home</Link></li>
                                     <li>Contact</li>
                                 </ul>
@@ -31,8 +32,7 @@ const ContactUs = () => {
                             <div className="contact-info">
                                 <i className="bx bxs-phone"></i>
                                 <h4>Contact Number</h4>
-                                <p><a href="tel:+0123654987">+0123 654 987</a></p>
-                                <p><a href="tel:+0123456789">+0123 456 789</a></p>
+                                <p><a href="tel:+919136369036">+91 91363 69036</a></p>
                             </div>
                         </div>
 
@@ -41,8 +41,7 @@ const ContactUs = () => {
                             <div className="contact-info">
                                 <i className="bx bxs-location-plus"></i>
                                 <h4>Our Location</h4>
-                                <p>6th floor, Anthina</p>
-                                <p>Barbosa Sidney</p>
+                                <p>Sector 39, Gurugram, Haryana 122002</p>
                             </div>
                         </div>
 
@@ -51,8 +50,7 @@ const ContactUs = () => {
                             <div className="contact-info">
                                 <i className="bx bxs-envelope"></i>
                                 <h4>Contact Email</h4>
-                                <p><a href="mailto:someone@example.com">someone@example.com</a></p>
-                                <p><a href="mailto:someoneelse@example.com">someoneelse@example.com</a></p>
+                                <p><a href="mailto:support@themover.in">support@themover.in</a></p>
                             </div>
                         </div>
                     </div>
@@ -66,6 +64,7 @@ const ContactUs = () => {
                     <div className="section-title">
                         <span>Contact Us</span>
                         <h2>Get in Touch</h2>
+                        <p>Have a question? Fill out the form below, and our team will get back to you shortly.</p>
                     </div>
 
                     <div className="contact-form">
