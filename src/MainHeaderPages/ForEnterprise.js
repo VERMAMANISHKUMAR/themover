@@ -6,10 +6,10 @@ import Porter from './Porter';
 
 import '../assets/styles/ForEnterprise.css';
 // Import images
-import image1 from "../assets/assert/hero-slider/hero-slider1.jpg";
-import image2 from "../assets/assert/hero-slider/hero-slider2.jpg";
-import image3 from "../assets/assert/hero-slider/hero-slider3.jpg";
-import image4 from "../assets/assert/hero-slider/hero-slider4.jpg";
+import image1 from "../assets/img/hero-slider/hero-slider1.jpg";
+import image2 from "../assets/img/hero-slider/hero-slider2.jpg";
+import image3 from "../assets/img/hero-slider/hero-slider3.jpg";
+import image4 from "../assets/img/hero-slider/hero-slider4.jpg";
 
 // Import Swiper styles
 import 'swiper/css';

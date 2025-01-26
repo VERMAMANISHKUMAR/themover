@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import ServiceImg1 from '../assets/img/services/services1.jpg'
 import ServiceImg2 from '../assets/img/services/services2.jpg'
 import ServiceImg3 from '../assets/img/services/services3.jpg'
-import ServiceImg4 from '../assets/img/services/services4.jpg'
-import ServiceImg5 from '../assets/img/services/services5.jpg'
-import ServiceImg6 from '../assets/img/services/services6.jpg'
 import ServiceImg7 from '../assets/img/services/services7.jpg'
 const ServicesPage = () => {
     return (
@@ -18,6 +15,7 @@ const ServicesPage = () => {
                             <div className="page-content">
                                 <h2>Our Services</h2>
                                 <ul>
+                                    <p>Experience the convenience and reliability of TheMover for all your relocation and parcel needs.</p>
                                     <li><Link to="/">Home</Link></li>
                                     <li>Services</li>
                                 </ul>
@@ -39,69 +37,34 @@ const ServicesPage = () => {
                     <div className="row">
                         <div className="col-lg-4 col-md-6">
                             <div className="service-card-two">
-                                <img src={ServiceImg1} alt="Road Freight" />
+                                <img src={ServiceImg1} alt="Local Shifting" />
                                 <div className="service-caption">
-                                    <h3>Road Freight</h3>
-                                    <p>But I must explain to you how all this mistaken idea of denouncing I will give you a complete account of the system.</p>
-                                    <a href="#" className="default-btn-two">Read More</a>
+                                    <h3>Local Shifting</h3>
+                                    <p>Moving to a new home in your city? Our local shifting services are tailored to make your relocation stress-free and quick. Our trained team ensures your belongings are packed, transported, and unpacked with utmost care.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6">
                             <div className="service-card-two">
-                                <img src={ServiceImg2} alt="Ocean Freight" />
+                                <img src={ServiceImg2} alt="Packers and Movers" />
                                 <div className="service-caption">
-                                    <h3>Ocean Freight</h3>
-                                    <p>But I must explain to you how all this mistaken idea of denouncing I will give you a complete account of the system.</p>
-                                    <a href="#" className="default-btn-two">Read More</a>
+                                    <h3>Packers and Movers</h3>
+                                    <p>Relocating to a new city? Our comprehensive packing and moving services provide end-to-end solutions. From packing your items securely to transporting and unpacking them at your destination, we handle it all.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6">
                             <div className="service-card-two">
-                                <img src={ServiceImg3} alt="Air Freight" />
+                                <img src={ServiceImg3} alt="Parcel Services" />
                                 <div className="service-caption">
-                                    <h3>Air Freight</h3>
-                                    <p>But I must explain to you how all this mistaken idea of denouncing I will give you a complete account of the system.</p>
-                                    <a href="#" className="default-btn-two">Read More</a>
+                                    <h3>Parcel Services</h3>
+                                    <p>Need to send packages across India? Our reliable and timely parcel services ensure your documents, gifts, or goods reach their destination safely. With tracking options and fast delivery, we've got you covered.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-lg-4 col-md-6">
-                            <div className="service-card-two">
-                                <img src={ServiceImg4} alt="B2B Exchange" />
-                                <div className="service-caption">
-                                    <h3>B2B Exchange</h3>
-                                    <p>But I must explain to you how all this mistaken idea of denouncing I will give you a complete account of the system.</p>
-                                    <a href="#" className="default-btn-two">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <div className="service-card-two">
-                                <img src={ServiceImg5} alt="Home Shipping" />
-                                <div className="service-caption">
-                                    <h3>Home Shipping</h3>
-                                    <p>But I must explain to you how all this mistaken idea of denouncing I will give you a complete account of the system.</p>
-                                    <a href="#" className="default-btn-two">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <div className="service-card-two">
-                                <img src={ServiceImg6} alt="Office Moving" />
-                                <div className="service-caption">
-                                    <h3>Office Moving</h3>
-                                    <p>But I must explain to you how all this mistaken idea of denouncing I will give you a complete account of the system.</p>
-                                    <a href="#" className="default-btn-two">Read More</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -114,9 +77,10 @@ const ServicesPage = () => {
                         <div className="col-lg-6">
                             <div className="logistic-text">
                                 <h2>Best <span>Logistic Service</span> Solution Near you</h2>
-                                <p>At vero eos et et iusto odio ducimus qui blanditiis praesentium animi voluptatum deleniti atque corrupti dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                                <p>At TheMover, we’ve been at the forefront of reliable and innovative shipping solutions since 1998. With over two decades of experience, we’ve evolved into a trusted name for seamless digital shipping services across India.</p>
+                                <p>From the very beginning, our mission has been to simplify the logistics process while maintaining the highest standards of efficiency, reliability, and customer satisfaction. Over the years, we have embraced cutting-edge technology to bring you fast, secure, and transparent shipping services, making your logistics experience better than ever.</p>
                             </div>
-                            <a href="#" className="default-btn-one">Read More</a>
+                            <li className="default-btn-one"><Link to="/about-us">Read More</Link></li>
                         </div>
 
                         <div className="col-lg-6">

@@ -1,9 +1,6 @@
 import React from 'react';
-import img1 from '../../src/assets/img/clients/client1.jpg'
-import signature from '../assets/img/sign.png'
 import Shipping from '../assets/img/speciality/speciality2.jpg'
 import Blog from '../assets/img/blog/blog7.jpg'
-import partner from '../assets/img/partner/partner1.png'
 const AboutUs = () => {
   return (
     <>
