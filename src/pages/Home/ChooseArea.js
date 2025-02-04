@@ -1,5 +1,5 @@
 import React from "react";
-// import Shape2 from "../../assets/img/shape/shape2.png";
+import Shape2 from "../../assets/img/shape/shape2.png";
 // import Shape5 from "../../assets/img/shape/shape5.png";
 import { Link } from "react-router-dom";
 
@@ -85,7 +85,7 @@ const ChooseArea = () => {
               
                 
                 <div className="shape-image">
-                  <img src="assets/img/shape/shape2.png" alt="icon" />
+                  <img src={Shape2} alt="icon" />
                 </div>
               </div>
             </div>

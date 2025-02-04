@@ -4,6 +4,7 @@ import ServiceImg1 from '../assets/img/services/gallery-5.png'
 import ServiceImg2 from '../assets/img/services/gallery-6.png'
 import ServiceImg3 from '../assets/img/services/gallery-9.png'
 import ServiceImg7 from '../assets/img/services/gallery-10.jpg'
+
 const ServicesPage = () => {
     return (
         <>
@@ -13,7 +14,7 @@ const ServicesPage = () => {
                     <div className="d-table-cell">
                         <div className="container">
                             <div className="page-content">
-                                <h2>Our Services</h2>
+                                <h2 >Our Services</h2>
                                 <ul>
                                     <p>Experience the convenience and reliability of TheMover for all your relocation and parcel needs.</p>
                                     <li><Link to="/">Home</Link></li>
@@ -30,8 +31,8 @@ const ServicesPage = () => {
             <div className="our-services-area ptb-100">
                 <div className="container">
                     <div className="section-title">
-                        <span>Our Services</span>
-                        <h2>Delivering Safety, Speed, and Reliability Your Trusted Logistics Partner.</h2>
+                        <span style={{textAlign:'center'}}>Our Services</span>
+                        <h2 style={{textAlign:'center'}}>Delivering Safety, Speed, and Reliability Your Trusted Logistics Partner.</h2>
                     </div>
 
                     <div className="row">
@@ -80,7 +81,7 @@ const ServicesPage = () => {
                                 <p>At TheMover, we’ve been at the forefront of reliable and innovative shipping solutions since 1998. With over two decades of experience, we’ve evolved into a trusted name for seamless digital shipping services across India.</p>
                                 <p>From the very beginning, our mission has been to simplify the logistics process while maintaining the highest standards of efficiency, reliability, and customer satisfaction. Over the years, we have embraced cutting-edge technology to bring you fast, secure, and transparent shipping services, making your logistics experience better than ever.</p>
                             </div>
-                            <li className="default-btn-one"><Link to="/about-us">Read More</Link></li>
+                            <li className="default-btn-one"><Link to="/about-us" style={{textDecoration:'none',color:'white'}}>Read More</Link></li>
                         </div>
 
                         <div className="col-lg-6">
@@ -116,7 +117,7 @@ const ServicesPage = () => {
                     </div>
                 </div>
             </div>
-            {/* End Newsletter Area */}
+            
         </>
     );
 };

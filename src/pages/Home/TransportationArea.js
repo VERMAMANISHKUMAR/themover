@@ -1,13 +1,16 @@
 import React, { useState } from "react";
-import shape3 from '../../assets/img/shape/shape3.png'
+import shape3 from '../../assets/img/shape/shape3.png';
+import '../../assets/styles/TransportationArea.css';
 
 const TransportationArea = () => {
   const [formData, setFormData] = useState({
     height: "",
     weight: "",
     width: "",
-    commodity: "",
+    commodity: "electronics",
     distance: "",
+    cost: null,
+    discountedCost: null, // New state for discounted cost
   });
 
   const handleChange = (e) => {
@@ -15,10 +18,31 @@ const TransportationArea = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log("Form Data:", formData);
+  const calculateCost = () => {
+    let calculatedCost = 0;
+    const { height, weight, width, commodity, distance } = formData;
+
+    if (commodity === "electronics") {
+      calculatedCost = weight * distance * 10;
+    } else if (commodity === "clothing") {
+      calculatedCost = weight * distance * 5;
+    } else if (commodity === "documents") {
+      calculatedCost = distance * 2;
+    }
+
+    if (height > 100 || width > 50) {
+      calculatedCost += 50;
+    }
+
+    // Calculate 10% discount
+    const discount = calculatedCost * 0.1;
+    const discountedCost = calculatedCost - discount;
+
+    setFormData({
+      ...formData,
+      cost: calculatedCost.toFixed(2),
+      discountedCost: discountedCost.toFixed(2),
+    });
   };
 
   return (
@@ -35,12 +59,12 @@ const TransportationArea = () => {
               <div className="transportation-shape">
                 <img src={shape3} alt="icon" />
               </div>
-              <form onSubmit={handleSubmit}>
+              <form>
                 <div className="form-group">
                   <input
-                    type="text"
+                    type="number"
                     className="form-control"
-                    placeholder="Height (CM):"
+                    placeholder="Height (CM)"
                     name="height"
                     value={formData.height}
                     onChange={handleChange}
@@ -49,9 +73,9 @@ const TransportationArea = () => {
 
                 <div className="form-group">
                   <input
-                    type="text"
+                    type="number"
                     className="form-control"
-                    placeholder="Weight (KG):"
+                    placeholder="Weight (KG)"
                     name="weight"
                     value={formData.weight}
                     onChange={handleChange}
@@ -60,9 +84,9 @@ const TransportationArea = () => {
 
                 <div className="form-group">
                   <input
-                    type="text"
+                    type="number"
                     className="form-control"
-                    placeholder="Width (CM):"
+                    placeholder="Width (CM)"
                     name="width"
                     value={formData.width}
                     onChange={handleChange}
@@ -70,21 +94,23 @@ const TransportationArea = () => {
                 </div>
 
                 <div className="form-group">
-                  <input
-                    type="text"
+                  <select
                     className="form-control"
-                    placeholder="Type of commodity:"
                     name="commodity"
                     value={formData.commodity}
                     onChange={handleChange}
-                  />
+                  >
+                    <option value="electronics">Electronics</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="documents">Documents</option>
+                  </select>
                 </div>
 
                 <div className="form-group mb-30">
                   <input
-                    type="text"
+                    type="number"
                     className="form-control"
-                    placeholder="Distance (KM):"
+                    placeholder="Distance (KM)"
                     name="distance"
                     value={formData.distance}
                     onChange={handleChange}
@@ -92,14 +118,20 @@ const TransportationArea = () => {
                 </div>
 
                 <div className="form-btn">
-                  <button type="submit" className="default-btn-one me-4">
+                  <button type="button" className="default-btn-one me-4" onClick={calculateCost}>
                     Cost Calculate
                   </button>
-                  {/* <button type="submit" className="default-btn-two">
-                    Get A Full Quote
-                  </button> */}
                 </div>
-                <h3>Get a brochure / 10% Discount on first order</h3>
+
+                {formData.cost !== null && (
+                  <>
+                    <h3>Original Cost: <del>${formData.cost}</del></h3>
+                    <h3>Get a brochure / 10% Discount on first order</h3>
+                    <h3 style={{ color: "wight" }}>Discounted Cost: ${formData.discountedCost} (10% OFF)</h3>
+                  </>
+                )}
+
+                
               </form>
             </div>
           </div>
@@ -112,7 +144,9 @@ const TransportationArea = () => {
                     <a
                       href="https://youtu.be/p10x4nxuA-s?si=46xmLZt3iDypgGHU"
                       className="popup-youtube"
-                    target="_blank">
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i className="bx bx-play whiteText"></i>
                       <span className="ripple pinkBg"></span>
                       <span className="ripple pinkBg"></span>
@@ -123,6 +157,7 @@ const TransportationArea = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>

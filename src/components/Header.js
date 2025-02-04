@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import themoverLogo from "../assets/img/themover-logo.png";
-
+import '../assets/css/style.css'
+import '../assets/css/responsive.css'
+import '../assets/css/dark.css'
+import '../assets/css/bootstrap.min.css'
+import '../assets/css/boxicons.min.css'
+import '../assets/css/animate.min.css'
 const Header = () => {
   return (
     <header className="header-area">

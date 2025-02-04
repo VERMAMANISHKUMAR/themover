@@ -70,9 +70,9 @@ const ContactUs = () => {
             <div className="contact-form-area pb-100">
                 <div className="container">
                     <div className="section-title">
-                        <span>Contact Us</span>
-                        <h2>Get in Touch</h2>
-                        <p>Have a question? Fill out the form below, and our team will get back to you shortly.</p>
+                        <span style={{textAlign:'center'}}>Contact Us</span>
+                        <h2 style={{textAlign:'center'}}>Get in Touch</h2>
+                        <p style={{textAlign:'center'}}>Have a question? Fill out the form below, and our team will get back to you shortly.</p>
                     </div>
 
                     <div className="contact-form">
